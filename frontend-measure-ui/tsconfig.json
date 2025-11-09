@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["cypress", "node"]
+  },
+  "vueCompilerOptions": {
+    "globalTypesPath": "./node_modules/.vite/deps/vue.d.ts"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "cypress/**/*.ts",
+    "cypress/**/*.cy.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}
